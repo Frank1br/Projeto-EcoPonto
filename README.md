@@ -1,4 +1,4 @@
-Você pode colocar esta estrutura neste readme
+
 
 # Sistema de Solicitação de Coleta - Ecoponto
 
