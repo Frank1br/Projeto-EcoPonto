@@ -19,7 +19,7 @@ O **Sistema de Solicitação de Coleta - Ecoponto** é uma solução web desenvo
 ## 🚀 Como Executar o Projeto
 1. **Clone este repositório**:
    ```sh
-   git clone https://github.com/seu-usuario/sistema-solicitacao-coleta.git
+   git clone https://github.com/Frank1br/Projeto-EcoPonto.git
    ```
 2. **Mova os arquivos para o diretório do servidor web** (ex: `htdocs` no XAMPP).
 3. **Configure o banco de dados**:
