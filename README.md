@@ -42,43 +42,33 @@ O **Sistema de Solicitação de Coleta - Ecoponto** é uma solução web desenvo
 ```
 📁 sistema-solicitacao-coleta
 │
-│-- 📄 index.php                 # Página principal do sistema (poderia ser a página inicial)
+├── 📁 assets/
+│   ├── 📁 css/                  # Estilos personalizados
+│   └── 📁 js/                   # Scripts JS, se necessário
 │
-│-- 📂 assets                    # Pasta para estilos e scripts estáticos
-│   │-- 📂 css                   # Arquivos de estilo CSS
-│   │-- 📂 js                    # Arquivos JavaScript
-│   │-- 📂 images                # Imagens utilizadas no projeto
+├── 📁 config/
+│   └── db_config.php           # Arquivo de conexão com o banco
 │
-│-- 📂 includes                 # Arquivos PHP reutilizáveis
-│   │-- 📄 header.php            # Cabeçalho com menu e links globais
-│   │-- 📄 footer.php            # Rodapé do site
-│   │-- 📄 db_config.php         # Arquivo de configuração da conexão com o banco
+├── 📁 views/
+│   ├── layout.php              # Layout base com Bootstrap
+│   ├── request_form.php        # Formulário de solicitação de coleta
+│   └── request_list.php        # Lista de solicitações
 │
-│-- 📂 public                    # Arquivos públicos, como index.php
-│   │-- 📄 index.php             # Página inicial
-│   │-- 📄 request.php           # Página para a solicitação de coleta
-│
-│-- 📂 src                       # Código de lógica e backend
-│   │-- 📂 controllers           # Controladores PHP para diferentes funcionalidades
-│   │-- 📂 models                # Modelos que interagem com o banco de dados
-│   │-- 📂 views                 # Arquivos de visualização (páginas HTML)
-│   │-- 📄 request_handler.php   # Lógica para lidar com as solicitações de coleta
-│   │-- 📄 db_operations.php     # Operações de banco de dados
-│
-│-- 📂 database                  # Scripts SQL e estrutura do banco de dados
-│   │-- 📄 database.sql          # Script de criação do banco de dados
-│
-│-- 📄 config.php                # Configurações gerais do sistema
-│-- 📄 README.md                 # Documentação do projeto
-│-- 📄 .gitignore                # Arquivos a serem ignorados pelo Git
+├── 📄 index.php                # Página principal (formulário + layout)
+├── 📄 submit_request.php       # Lógica de inserção de solicitação
+├── 📄 get_requests.php         # Listagem de solicitações existentes
+├── 📄 database.sql             # Script para criação do banco de dados
+├── 📄 README.md                # Documentação do projeto
 
 ```
+🔥 Melhorias Futuras
 
-## 🔥 Melhorias Futuras
 - Implementar autenticação de usuários.
 - Adicionar histórico de solicitações.
 - Permitir o cancelamento de coletas agendadas.
 - Criar uma API para integração com aplicativos móveis.
+
+Melhorar o painel administrativo.
 
 ## 📜 Licença
 Este projeto está sob a licença **MIT**. Fique à vontade para usá-lo e modificá-lo! 🚀
